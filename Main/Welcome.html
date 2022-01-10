@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --bg-color: hsl(0 0% 100%);
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 24;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: var(--bg-color);
+}
+
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.subtitle {
+  color: hsl(0 0% 0% / 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+.paragraph {
+  position: relative;
+  margin-left:150px;
+  margin-right:150px;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#yt-link {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  color: hsl(0 0 0 / 0.7);
+
+  &:hover,
+  &:focus {
+    color: teal;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+  <h1 class="paragraph">Hello, Welcome to SVCooler!</h1>
+  <p class="subtitle">Created by Aidan</p>
+
+  <p class="paragraph">We aim to create a solar-powered cooler to keep vaccines refrigerated for communities with little access to electricity or medical care. </p>
+
+  <p class ="paragraph"><em>Vaccines for children are inexpensive and generally available in many countries. However, vaccines must be kept carefully refrigerated up until it is administered. If the cold chain is ever broken, that batch of vaccine is effectively ruined. Stable electricity is lacking for billions of people, so the final barrier preventing vaccine access for all is a practical vaccine refrigeration device that doesn’t require connection to a stable electric grid.</em></p>
+
+  <p class ="paragraph">
+The ultimate goal of our “Solar Vaccine Cooler” project is to 1) develop a low cost and robust solar-powered vaccine refrigerator that uses AI/Machine Learning to precisely manage the vaccine storage conditions; 2) deploy and field test in the Philippines, Cambodia, Indonesia, and Rwanda in the summers of 2022-2023; and 3) raise donations to provide vaccines for 100,000 children in need.
+</p>
+
+  <p class="paragraph">The “Solar Vaccine Cooler” is a solar-powered vaccine storage device designed to keep vaccines safely stored within a specific temperature range. It utilizes solar panels to charge the built-in battery and sustain the device overnight. The Cooler has automatic temperature monitoring, using smart temperature control to save energy while keeping the vaccines within their acceptable temperature range. </p>
+
+</body>
+</html>

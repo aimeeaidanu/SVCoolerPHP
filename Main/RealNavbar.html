@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+<script>
+function scrollHome(){
+  window.scrollTo(100,0)
+}
+function scrollDonate(){
+  window.scrollTo(100,550)
+}
+function scrollAbout(){
+  window.scrollTo(100,1200)
+}
+function scrollContact(){
+  window.scrollTo(100,1600)
+}
+</script>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home" onclick="scrollHome()" value="scrollHome">Home</a></li>
+  <li><a href="#Donate" onclick="scrollDonate()" value="scrollDonate">Donate</a></li>
+  <li><a href="#About Me" onclick="scrollAbout()" value="scrollAbout">About Us</a></li>
+  <li><a href="#contact" onclick="scrollContact()" value="scrollContact">Contact</a></li>
+</ul>
+
+</body>
+</html>

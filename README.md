@@ -30,3 +30,10 @@ Follow instructions below, but for steps one to four, you can directly download 
    e. Type `php -S localhost:4000`
 6. Go to your web browser and connect to localhost:4000
 7. *OPTIONAL* Open Command Prompt and type `code .` if you want to edit the code. 
+## Github Collaboration
+# Linux & Windows
+1. Install and Download `vscode:extension/GitHub.vscode-pull-request-github` inside  Visual Studio Code
+2. Click the github icon on the left side of your nav bar.
+3. Sign into github.
+4. Now you are ready to edit the respitory!
+5. Clicking on Source Control allows your to push and commit your edits.

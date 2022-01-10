@@ -27,6 +27,6 @@ Follow instructions below, but for steps one to four, you can directly download 
    b. Type `mkdir SVCoolerPHP`
    c. Type `cd SVCoolerPHP`
    d. Type `git clone https://github.com/aimeeaidanu/SVCoolerPHP.git`
-   e. Type `php -S localhost:4000
+   e. Type `php -S localhost:4000`
 6. Go to your web browser and connect to localhost:4000
 7. *OPTIONAL* Open Command Prompt and type `code .` if you want to edit the code. 
